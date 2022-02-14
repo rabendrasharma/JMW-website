@@ -1,0 +1,60 @@
+<header>
+  <div>
+    <div>
+      <!-- .site-branding -->
+      <div class="">
+        <div class="">
+          <nav id="" class="navbar">
+            <div class="">
+              <ul>
+                <li><%= link_to image_tag("Just-Mind-Work.png",:size=>'200x40') %></li>
+                <li  class="menu_item" style=""><%=link_to "home", root_path %></li>
+                <li class="menu_item"><%=link_to "About", about_us_path %></li>
+                <li  class="menu_item">
+                  <a href="#" class="service menu_item">Our Services</a>
+                  <ul class="sub-menu">
+                    <li class="">
+                      <%= link_to "Web Development", jmw_web_development_path %>
+                    </li>
+                    <li class="">
+                      <%= link_to "Mobile App Solutions", jmw_our_services_path %>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu_item"><%=link_to "Career", jmw_career_path %></li>
+                 <li class="menu_item"><%=link_to "Contact", jmw_contact_us_path %></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- #site-navigation -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style type="text/css">
+  ul{
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  ul>li:hover ul {
+    display:block;
+  }
+  .sub-menu{
+    display: none;
+  }
+  .menu_item{
+   margin-left:30px;
+  }
+  .navbar {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  }
+</style>
